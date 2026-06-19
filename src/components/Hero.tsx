@@ -10,33 +10,33 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden"
     >
-      <div className="max-w-[1500px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
-
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center px-2">
         {/* LEFT SIDE */}
 
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
+          className="px-4 sm:px-6 lg:px-0"
         >
           <p className="text-cyan-300 uppercase tracking-[6px] font-semibold text-xl mb-4">
             Hello, I'm
           </p>
 
-          <h1 className="text-6xl md:text-8xl font-extrabold leading-tight mb-6 whitespace-nowrap">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold leading-tight mb-6">
           <span className="gradient-text">
-            CELINE SOWMYA J
+
+          CELINE SOWMYA J
           </span>
           </h1>
 
           
 
-          <p className="mt-8 max-w-2xl text-xl leading-9 text-white font-light tracking-wide text-justify">
+          <p className="mt-8 max-w-2xl text-base sm:text-lg lg:text-xl leading-8 text-white font-light text-justify">
             Passionate about Software Development and solving real-world problems through innovative technology. I enjoy building efficient, scalable, and user-friendly applications using Python and modern web technologies while continuously learning and growing as a developer.
           </p>
 
-          <div className="flex gap-5 mt-10 flex-wrap">
-
+          <div className="flex flex-col sm:flex-row gap-5 mt-10">
             <a
               href="/resume.pdf"
               target="_blank"
@@ -85,8 +85,9 @@ export default function Hero() {
             <Image
               src="/profile.jpeg"
               alt="Profile"
-              width={420}
-              height={420}
+              width={350}
+              height={350}
+              sizes="(max-width: 768px) 280px, 420px"
               priority
               className="relative rounded-full border-4 border-cyan-400 shadow-[0_0_60px_#06b6d4]"
             />

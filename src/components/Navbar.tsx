@@ -21,9 +21,9 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/70 border-b border-cyan-500/20">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
-        <h1 className="text-2xl font-bold text-cyan-400">
+        {/* < h1 className="text-2xl font-bold text-cyan-400">
           Celine Portfolio
-        </h1>
+        </h1> */}
 
         <div className="hidden md:flex gap-8">
           {navLinks.map((link) => (
